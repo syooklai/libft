@@ -1,18 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: syooklai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/11 20:12:02 by syooklai          #+#    #+#             */
+/*   Updated: 2024/09/11 20:15:24 by syooklai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    /* declaring our temporary pointer */
-    char    *tmp_ptr;
-    
-    /* making our temporary pointer equal to b converted to char * */
-    tmp_ptr = (char *) s;
-    /* looping on our temporary pointer while we didn't reach n */
-    while (n > 0)
-    {
-        /* assigning 0 to the current byte in our temporary pointer */
-        *(tmp_ptr++) = 0;
-        /* reducing the n by one so we only set n bytes to 0 */
-         n--;
-    }
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *) s;
+	while (n > 0)
+	{
+		*(tmp_ptr++) = 0;
+		n--;
+	}
 }

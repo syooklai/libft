@@ -1,9 +1,23 @@
-#include    "libft.h"
-size_t ft_strlen(const char *s)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: syooklai <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/11 19:05:12 by syooklai          #+#    #+#             */
+/*   Updated: 2024/09/11 19:17:51 by syooklai         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-    size_t i;
-    i = 0;
-    while(s[i])
-        i++;
-    return(i);
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
